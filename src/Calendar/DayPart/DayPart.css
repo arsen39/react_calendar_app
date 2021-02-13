@@ -1,0 +1,14 @@
+.day-part-elem {
+  color: #f5f5f5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.day-week{
+  font-size: 3rem;
+}
+
+.day-month {
+  font-size: 20rem;
+  
+}

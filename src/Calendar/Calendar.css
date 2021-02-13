@@ -1,0 +1,14 @@
+.calendar-part{
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.day-part {
+  background-color: #38cec4;
+}
+
+.month-part {
+  background-color:#f5f5f5;
+}

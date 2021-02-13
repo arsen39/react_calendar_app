@@ -1,0 +1,29 @@
+.day{
+  color: #b7b7b7;
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.d{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.day-of-week-leter{
+  color: #eb1b57;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.cd{
+  border: 3px solid #eb1b57;
+  border-radius: 50px;
+  color: #eb1b57;
+}
+

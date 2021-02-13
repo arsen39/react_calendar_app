@@ -1,0 +1,17 @@
+.month-part-elem{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.month-year{
+  color: #009991;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.calendar-wrapper{
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 80px;
+}
