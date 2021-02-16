@@ -8,7 +8,7 @@ import CalendarItselfWrapper from "./CalendarItselfWrapper";
 class MonthPart extends Component {
   
   render() {
-    const { currentDate: date } = this.props;
+    const { currentDate: date, monthsSelector } = this.props;
     return (
       <>
         <p className="month-part-elem month-year">

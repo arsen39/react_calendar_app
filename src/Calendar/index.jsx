@@ -9,8 +9,13 @@ class Calendar extends Component {
     super(props);
     this.state = {
       currentDate: new Date (),
-      customDate: new Date (),
+      selectedDate: new Date (),
+      isCurrent: true,
     };
+  }
+
+  monthsSelector = (isForward) => {
+
   }
 
   render() {
@@ -20,7 +25,7 @@ class Calendar extends Component {
           <DayPart currentDate={this.state.currentDate}/>
         </div>
         <div className='month-part calendar-part' >
-          <MonthPart currentDate={this.state.currentDate}/>
+          <MonthPart currentDate={this.state.currentDate} monthsSelector={this.monthsSelector}/>
         </div>
       </>
     );

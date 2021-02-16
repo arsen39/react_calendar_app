@@ -13,5 +13,6 @@
   width: 80%;
   display: flex;
   flex-flow: column nowrap;
+  /* justify-content: center; */
   margin-top: 80px;
 }
