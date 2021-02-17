@@ -3,10 +3,10 @@ import classNames from "classnames";
 
 class Day extends Component {
   render() {
-    const { day, numb, currentDay } = this.props;
+    const { day, numb, currentDay, isCurrent} = this.props;
     const classesCSS = classNames("day", {
       hidden: day === 99,
-      cd: day === currentDay,
+      cd: day === currentDay&&isCurrent,
     });
     return (
       <td className={classesCSS} key={numb}>

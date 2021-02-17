@@ -35,7 +35,7 @@ class DaysOfMonth extends Component {
       .map((week, numb) => (
         <tr className="week" key={numb}>
           {week.map((day, numb) => (
-            <Day day={day} numb={numb} currentDay={currentDay} />
+            <Day day={day} numb={numb} currentDay={currentDay} isCurrent={this.props.isCurrent}/>
           ))}
         </tr>
       ));

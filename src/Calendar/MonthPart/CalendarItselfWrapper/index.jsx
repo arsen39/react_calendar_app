@@ -22,7 +22,7 @@ class CalendarItselfWrapper extends Component {
           <thead>
             <tr className="week">{this.dayOfWeekAppender(daysOfWeek)}</tr>
           </thead>
-          <DaysOfMonth currentDate={date}/>
+          <DaysOfMonth currentDate={date} isCurrent={this.props.isCurrent}/>
         </table>
       </>
     );

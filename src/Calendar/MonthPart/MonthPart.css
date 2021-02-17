@@ -1,18 +1,37 @@
-.month-part-elem{
+.month-part-elem {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.month-year{
+.month-year {
   color: #009991;
   font-size: 3rem;
   font-weight: bold;
 }
 
-.calendar-wrapper{
-  width: 80%;
+.calendar-wrapper {
+  position: relative;
+  width: 100%;
   display: flex;
-  flex-flow: column nowrap;
-  /* justify-content: center; */
+  flex-flow: row nowrap;
+  justify-content: center;
   margin-top: 80px;
+}
+
+.arrow-img {
+  position: absolute;
+  cursor: pointer;
+  align-self: center;
+  object-fit: cover;
+  height: 80px;
+}
+
+.ar {
+  left: 90%;
+  top: 30%
+}
+
+.al {
+  right: 90%;
+  top: 30%
 }
