@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./CalendarItselfWrapper.css";
 import DaysOfMonth from "./DaysOfMonth";
+import PropTypes from 'prop-types';
 
 const daysOfWeek = ["S", "M", "T", "W", "T", "F", "S"];
 
@@ -27,6 +28,11 @@ class CalendarItselfWrapper extends Component {
       </>
     );
   }
+}
+
+CalendarItselfWrapper.propTypes = {
+  date: PropTypes.instanceOf(Date),
+  isCurrent: PropTypes.bool,
 }
 
 export default CalendarItselfWrapper;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Day from "./Day";
+import PropTypes from 'prop-types';
 import {
   format,
   getWeeksInMonth,
@@ -19,7 +20,7 @@ class DaysOfMonth extends Component {
 
     let dayCounter = 1;
     return new Array(numbOfWeeks)
-      .fill(new Array(7).fill(99))
+      .fill(new Array(7).fill(null))
       .map((iWeek, nWeek) =>
         iWeek.map((iDay, nDay) => {
           if (
@@ -44,6 +45,11 @@ class DaysOfMonth extends Component {
     const {currentDate} = this.props;
     return <tbody>{this.numbersOfMonthAppender(currentDate)}</tbody>;
   }
+}
+
+DaysOfMonth.propTypes = {
+  currentDate: PropTypes.instanceOf(Date),
+  isCurrent: PropTypes.bool,
 }
 
 export default DaysOfMonth;

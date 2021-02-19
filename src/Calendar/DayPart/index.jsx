@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import {format} from 'date-fns';
 import './DayPart.css';
 
@@ -13,6 +14,10 @@ class DayPart extends Component {
       </>
     );
   }
+}
+
+DayPart.propTypes = {
+  currentDate: PropTypes.instanceOf(Date),
 }
 
 export default DayPart;

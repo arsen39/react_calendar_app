@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from 'prop-types';
 import { format } from "date-fns";
 import "./MonthPart.css";
 import CalendarItselfWrapper from "./CalendarItselfWrapper";
@@ -43,6 +44,12 @@ class MonthPart extends Component {
       </>
     );
   }
+}
+
+MonthPart.propTypes = {
+  currentDate: PropTypes.instanceOf(Date),
+  isCurrent: PropTypes.bool,
+  monthsSelector: PropTypes.func
 }
 
 export default MonthPart;

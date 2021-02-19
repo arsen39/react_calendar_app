@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import classNames from "classnames";
+import PropTypes from 'prop-types';
 
 class Day extends Component {
   render() {
     const { day, currentDay, isCurrent} = this.props;
     const classesCSS = classNames("day", {
-      hidden: day === 99,
+      hidden: day === null,
       cd: day === currentDay&&isCurrent,
     });
     return (
@@ -14,6 +15,12 @@ class Day extends Component {
       </td>
     );
   }
+}
+
+Day.propTypes = {
+  day: PropTypes.number,
+  currentDay: PropTypes.instanceOf(Date),
+  isCurrent: PropTypes.bool,
 }
 
 export default Day;
