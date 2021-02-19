@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import DayPart from "./DayPart";
 import MonthPart from "./MonthPart";
 import "./Calendar.css";
-import { format } from "date-fns";
+import { addMonths } from "date-fns";
 
 class Calendar extends Component {
   constructor(props) {
@@ -18,10 +18,10 @@ class Calendar extends Component {
     const { currentDate, selectedDate} = this.state;
     const newDate = new Date(selectedDate);
     if (isForward) {
-      newDate.setMonth(selectedDate.getMonth() + 1);
+      newDate.setTime(addMonths(selectedDate,1));
       newDate.setDate(15);
     } else {
-      newDate.setMonth(selectedDate.getMonth() - 1);
+      newDate.setTime(addMonths(selectedDate,-1));
       newDate.setDate(15);
     }
     this.setState({

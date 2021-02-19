@@ -10,7 +10,6 @@
 }
 
 .calendar-wrapper {
-  position: relative;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -28,10 +27,10 @@
 
 .ar {
   left: 90%;
-  top: 30%
+  top: 50%
 }
 
 .al {
   right: 90%;
-  top: 30%
+  top: 50%
 }
